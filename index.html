@@ -12,19 +12,20 @@
     <title>Homepage</title>
   </head>
   <body>
-    <h1 style="display: none">Ashley Williams - Portfolio</h1>
-    <header>
-      <figure>
+    <h1 class="h1">Ashley Williams - Portfolio</h1>
+
+    <header class="header">
+      <figure class="profile-icon">
         <img
           class="header-profile-pic"
           src="./static/img/profile-pic-header.jpg"
           alt=""
         />
-        <figcaption>Ashley Williams</figcaption>
+        <figcaption class="header-pic-name">Ashley Williams</figcaption>
       </figure>
-      <div>
-        <h2>About me</h2>
-        <p>
+      <section class="about-me-section">
+        <h2 class="about-me-heading">About me</h2>
+        <p class="about-me-passage">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -32,17 +33,20 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        <button type="button">
-          <i class="devicon-github-original colored"></i>
-        </button>
-        <button type="button">
-          <i class="devicon-linkedin-plain"></i>
-        </button>
-        <button type="button">
-          <i class="devicon-twitter-original colored"></i>
-        </button>
-      </div>
+        <div class="header-nav-buttons">
+          <a class="header-nav-btn">
+            <i class="devicon-github-original colored"></i>
+          </a>
+          <a class="header-nav-btn">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+          <a class="header-nav-btn">
+            <i class="devicon-twitter-original colored"></i>
+          </a>
+        </div>
+      </section>
     </header>
+
     <main>
       <h2>My work</h2>
       <div class="projects">
@@ -156,6 +160,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div>
         <h2>Contact me</h2>
