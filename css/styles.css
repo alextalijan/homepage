@@ -119,4 +119,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.main {
+  padding: 7rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-heading {
+  font-size: 3rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.project-card {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  min-height: 400px;
+}
+
+.project-screenshot {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-project {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-first-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.project-title {
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+
+.project-first-line > a {
+  text-decoration: none;
+}
+
+.project-first-line > a > i {
+  font-size: 1.2rem;
 }
