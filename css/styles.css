@@ -18,6 +18,10 @@
   font-style: normal; /* Define font style if applicable */
 }
 
+:root {
+  --background-blue: #05c3dd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +61,7 @@ body {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: #05c3dd; /* your blue */
+  background: var(--background-blue); /* your blue */
   clip-path: polygon(0 100%, 100% 50%, 100% 0, 0 0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
@@ -176,4 +180,59 @@ body {
 
 .project-first-line > a > i {
   font-size: 1.2rem;
+}
+
+.footer {
+  background-color: var(--background-blue);
+  color: white;
+  display: flex;
+  padding: 3rem 4rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contact-section-title {
+  font-size: 2.5rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-phone,
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-phone > a,
+.contact-email > a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-links > a {
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.footer-pic-container {
+  width: 700px;
+  height: 500px;
 }
