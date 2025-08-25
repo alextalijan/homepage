@@ -264,6 +264,7 @@ body {
     top: 0%;
     left: 120%;
     font-size: 3rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   }
 
   /* 2. Let the "About Me" section flow next to it */
@@ -279,6 +280,14 @@ body {
 
   .header-nav-buttons {
     display: none;
+  }
+
+  .project-first-line > a > img {
+    width: 30px;
+  }
+
+  .project-first-line > a > i {
+    font-size: 1.8rem;
   }
 }
 
