@@ -241,7 +241,46 @@ body {
   min-width: 300px;
 }
 
-/* @media (max-width: 1123px) {} */
+@media (850px <= width <= 1123px) {
+  /* This wrapper will contain both floated and non-floated elements */
+  .header-wrapper {
+    display: block; /* Ensure it's not a flex container */
+    max-width: 1000px;
+    margin: 2rem auto; /* Center the wrapper */
+  }
+
+  /* 1. Float the profile picture to the left */
+  .profile-icon {
+    position: relative;
+    float: left;
+    min-width: 100px;
+    max-width: 350px; /* Give it a specific width */
+    height: 400px;
+    transform: translate(-10%, -20%);
+  }
+
+  .header-pic-name {
+    position: absolute;
+    top: 0%;
+    left: 120%;
+    font-size: 3rem;
+  }
+
+  /* 2. Let the "About Me" section flow next to it */
+  .about-me-section {
+    /* This section will now wrap around the floated element automatically */
+    display: block;
+  }
+
+  .about-me-heading {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-nav-buttons {
+    display: none;
+  }
+}
 
 @media (max-width: 850px) {
   .header-wrapper {
